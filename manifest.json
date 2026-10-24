@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Floating Chat Pro",
+  "version": "3.0",
+  "description": "Premium floating chat with links & tabs",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab", "tabs"]
+}
